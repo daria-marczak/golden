@@ -429,6 +429,7 @@ footer .media .icon-btn:hover a {
   .timeline .row {
     width: calc(50% + 89.5px);
     margin-bottom: 50px;
+    margin-left: 1rem;
   }
   .timeline .row:last-of-type {
     margin-bottom: 0;
@@ -443,15 +444,15 @@ footer .media .icon-btn:hover a {
   .timeline .row.odd {
     text-align: right;
     float: left;
-    margin-right: 2.5rem;
+    margin-right: 1rem;
   }
   .timeline .row.odd .image {
     float: right;
-    margin-left: 2.5rem;
   }
   .timeline .row.even {
     text-align: left;
     float: right;
+    margin-right: 1rem;
   }
   .timeline .row.even .image {
     float: left;
