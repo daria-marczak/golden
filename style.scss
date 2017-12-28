@@ -453,8 +453,9 @@ footer {
 			margin-bottom: 0;
 		}
 		.row {
-			width: calc(50% + 89.5px); // 79px -> połowa szerokości obrazka + 4px borderu
+			width: calc(50% + 89.5px);
 			margin-bottom: 50px;
+			margin-left: 1rem;
 			&:last-of-type {
 				margin-bottom: 0;
 			}
@@ -465,18 +466,19 @@ footer {
 				border-radius: 50%;
 				border: solid 4px #ccc;
 			}
+			
 			&.odd {
 				text-align: right;
 				float: left;
-				margin-right: 2.5rem;
+				margin-right: 1rem;
 				.image {
 					float: right;
-					margin-left: 2.5rem;
 				}
 			}
 			&.even {
 				text-align: left;
 				float: right;
+				margin-right: 1rem;
 				.image {
 					float: left;
 				}
