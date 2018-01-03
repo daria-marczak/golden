@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400i|Montserrat:400, 700|Roboto+Slab");
- $text: "Roboto Slab",
+$text: "Roboto Slab",
 serif;
 $serif: "Merriweather",
 serif;
@@ -231,10 +231,13 @@ h5 {
 /* ABOUT SECTION */
 
 .timeline {
+	margin-top: 3rem;
+	display: grid;
+	grid-template-columns: 1fr;
 	.row {
 		margin: 0 auto;
 		text-align: center;
-		width: 80%;
+		width: 100%;
 		margin-bottom: 50px;
 		&:last-of-type {
 			margin-bottom: 0;
@@ -249,7 +252,6 @@ h5 {
 		.text {
 			display: inline-block;
 		}
-		
 	}
 }
 
@@ -339,6 +341,9 @@ h5 {
 		}
 	}
 }
+
+
+/* CONTACT */
 
 .contact {
 	background-color: #222222;
@@ -438,64 +443,6 @@ footer {
 	.about .lead {
 		padding-bottom: 1rem;
 	}
-	.timeline {
-		background-image: url("https://image.ibb.co/c5P7n6/bg.png");
-		background-repeat: repeat-y;
-		background-position: center;
-		margin-top: 5rem;
-		time,
-		h4 {
-			text-transform: uppercase;
-			font-family: $headers;
-			font-weight: bold;
-			font-size: 1.125rem;
-			padding-bottom: 0;
-			margin-bottom: 0;
-		}
-		.row {
-			width: calc(50% + 101px);
-			margin-bottom: 50px;
-			margin-left: 1rem;
-			&:last-of-type {
-				margin-bottom: 0;
-			}
-			.text {
-				width: 100%;
-			}
-			.image {
-				border-radius: 50%;
-				border: solid 4px #ccc;
-			}
-			
-			&.odd {
-				text-align: right;
-				float: left;
-				margin-right: 1rem;
-				margin-left: 21%;
-				.image {
-					float: right;
-				}
-			}
-			&.even {
-				text-align: left;
-				float: right;
-				margin-right: 1rem;
-				.image {
-					float: left;
-				}
-			}
-		}
-		.circle {
-			position: absolute;
-			left: 50%;
-			transform: translate(-50%, 0%);
-		}
-	}
-	.clearfix::after {
-		content: "";
-		display: table;
-		clear: both;
-	}
 	.team {
 		margin-top: 14rem;
 	}
@@ -522,5 +469,74 @@ footer {
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, 0%);
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+	.timeline {
+		background-image: url('https://image.ibb.co/c5P7n6/bg.png');
+		background-repeat: repeat-y;
+		background-position: center;
+		.row {
+			width: calc(50% + 79px);
+			margin-bottom: 50px;
+		}
+		.even {
+			margin-right: 1%;
+			text-align: left;
+		}
+		.odd {
+			text-align: right;
+		}
+		.circle {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0%);
+		}
+	}
+}
+
+@media (min-width: 1301px) {
+	.timeline {
+		background-image: url('https://image.ibb.co/c5P7n6/bg.png');
+		background-repeat: repeat-y;
+		background-position: center;
+		.row {
+			width: calc(50% + 79px);
+			margin-bottom: 50px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			.text {}
+			.image {
+				border-radius: 50%;
+				border: solid 4px #ccc;
+			}
+			&.odd {
+				text-align: right;
+				float: left;
+				.image {
+					float: right;
+				}
+			}
+			&.even {
+				text-align: left;
+				float: right;
+				margin-left: 41%;
+				.image {
+					float: left;
+				}
+			}
+		}
+		.circle {
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0%);
+		}
+	}
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
 	}
 }
