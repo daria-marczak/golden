@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400i|Montserrat:400,
- 700|Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400i|Montserrat:400, 700|Roboto+Slab");
  $text: "Roboto Slab",
 serif;
 $serif: "Merriweather",
@@ -250,6 +249,7 @@ h5 {
 		.text {
 			display: inline-block;
 		}
+		
 	}
 }
 
@@ -260,8 +260,8 @@ h5 {
 }
 
 .circle {
-	width: 10.13rem;
-	height: 10.13rem;
+	width: 11rem;
+	height: 11rem;
 	border-radius: 50%;
 	background-color: $orange;
 	display: flex;
@@ -439,7 +439,7 @@ footer {
 		padding-bottom: 1rem;
 	}
 	.timeline {
-		background-image: url('https://image.ibb.co/c5P7n6/bg.png');
+		background-image: url("https://image.ibb.co/c5P7n6/bg.png");
 		background-repeat: repeat-y;
 		background-position: center;
 		margin-top: 5rem;
@@ -453,7 +453,7 @@ footer {
 			margin-bottom: 0;
 		}
 		.row {
-			width: calc(50% + 89.5px);
+			width: calc(50% + 101px);
 			margin-bottom: 50px;
 			margin-left: 1rem;
 			&:last-of-type {
@@ -471,6 +471,7 @@ footer {
 				text-align: right;
 				float: left;
 				margin-right: 1rem;
+				margin-left: 21%;
 				.image {
 					float: right;
 				}
