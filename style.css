@@ -170,21 +170,25 @@ h5 {
     padding-bottom: 7.688rem; }
 
 /* ABOUT SECTION */
-.timeline .row {
-  margin: 0 auto;
-  text-align: center;
-  width: 80%;
-  margin-bottom: 50px; }
-  .timeline .row:last-of-type {
-    margin-bottom: 0; }
-  .timeline .row .image {
-    width: 10.7rem;
-    height: 10.7rem;
-    border-radius: 50%;
-    border: solid 4px #ccc;
-    margin: 0 auto; }
-  .timeline .row .text {
-    display: inline-block; }
+.timeline {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr; }
+  .timeline .row {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px; }
+    .timeline .row:last-of-type {
+      margin-bottom: 0; }
+    .timeline .row .image {
+      width: 10.7rem;
+      height: 10.7rem;
+      border-radius: 50%;
+      border: solid 4px #ccc;
+      margin: 0 auto; }
+    .timeline .row .text {
+      display: inline-block; }
 
 .clearfix::after {
   content: "";
@@ -254,6 +258,7 @@ h5 {
     .companies .row-four img {
       width: 80%; }
 
+/* CONTACT */
 .contact {
   background-color: #222222;
   background-image: url("psd/map.png");
@@ -335,53 +340,6 @@ footer .media {
   .about .lead {
     padding-bottom: 1rem; }
 
-  .timeline {
-    background-image: url("https://image.ibb.co/c5P7n6/bg.png");
-    background-repeat: repeat-y;
-    background-position: center;
-    margin-top: 5rem; }
-    .timeline time, .timeline h4,
-    .timeline h4 {
-      text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
-      font-weight: bold;
-      font-size: 1.125rem;
-      padding-bottom: 0;
-      margin-bottom: 0; }
-    .timeline .row {
-      width: calc(50% + 101px);
-      margin-bottom: 50px;
-      margin-left: 1rem; }
-      .timeline .row:last-of-type {
-        margin-bottom: 0; }
-      .timeline .row .text {
-        width: 100%; }
-      .timeline .row .image {
-        border-radius: 50%;
-        border: solid 4px #ccc; }
-      .timeline .row.odd {
-        text-align: right;
-        float: left;
-        margin-right: 1rem;
-        margin-left: 21%; }
-        .timeline .row.odd .image {
-          float: right; }
-      .timeline .row.even {
-        text-align: left;
-        float: right;
-        margin-right: 1rem; }
-        .timeline .row.even .image {
-          float: left; }
-    .timeline .circle {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, 0%); }
-
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both; }
-
   .team {
     margin-top: 14rem; }
 
@@ -406,3 +364,53 @@ footer .media {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%); } }
+@media (min-width: 769px) and (max-width: 1300px) {
+  .timeline {
+    background-image: url("https://image.ibb.co/c5P7n6/bg.png");
+    background-repeat: repeat-y;
+    background-position: center; }
+    .timeline .row {
+      width: calc(50% + 79px);
+      margin-bottom: 50px; }
+    .timeline .even {
+      margin-right: 1%;
+      text-align: left; }
+    .timeline .odd {
+      text-align: right; }
+    .timeline .circle {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0%); } }
+@media (min-width: 1301px) {
+  .timeline {
+    background-image: url("https://image.ibb.co/c5P7n6/bg.png");
+    background-repeat: repeat-y;
+    background-position: center; }
+    .timeline .row {
+      width: calc(50% + 79px);
+      margin-bottom: 50px; }
+      .timeline .row:last-of-type {
+        margin-bottom: 0; }
+      .timeline .row .image {
+        border-radius: 50%;
+        border: solid 4px #ccc; }
+      .timeline .row.odd {
+        text-align: right;
+        float: left; }
+        .timeline .row.odd .image {
+          float: right; }
+      .timeline .row.even {
+        text-align: left;
+        float: right;
+        margin-left: 41%; }
+        .timeline .row.even .image {
+          float: left; }
+    .timeline .circle {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0%); }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both; } }
